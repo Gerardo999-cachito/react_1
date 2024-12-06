@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import './App.css';  // Asegúrate de que el archivo de estilos esté presente si deseas personalizar los estilos
+import GraficoCalificaciones from './components/GraficoCalificaciones'; // Asegúrate de que la ruta sea correcta
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Proyecto React: Gráficas de Calificaciones</h1>
       </header>
+      <main>
+        <GraficoCalificaciones />
+      </main>
     </div>
   );
 }
